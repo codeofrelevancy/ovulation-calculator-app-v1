@@ -27,7 +27,7 @@ export default function Calculator() {
 
   const onChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-    const updatedValue = name === 'cycleLength' ? toNumber(value) : value;
+    const updatedValue = name === 'cycle_length' ? toNumber(value) : value;
 
     dispatchForm({
       type: 'SET_' + name.toUpperCase(),
@@ -95,7 +95,7 @@ export default function Calculator() {
                   />
                   <div className="mt-6">
                     <Input
-                      name="cycleLength"
+                      name="cycle_length"
                       type="number"
                       placeholder="ex. 28"
                       value={cycleLength}
